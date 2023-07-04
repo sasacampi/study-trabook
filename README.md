@@ -1,70 +1,25 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Trabook Landing Page
 
-## Available Scripts
+Construção de uma página de destino para uma equipe de profissionais experientes em turismo que fornecerá os melhores conselhos e dicas para o seu destino desejado conforme a proposta do Daily UI #03. 
+## Aprendizados
 
-In the project directory, you can run:
+Durante esse projeto, eu tive a oportunidade de aprender diversos aspectos importantes. Alguns dos principais aprendizados que eu tive durante o desenvolvimento desse projeto incluem:
 
-### `npm start`
+Estrutura de componentes reutilizáveis: Ao trabalhar com React puro, é necessário dividir a página de destino em componentes menores e reutilizáveis. Isso facilita a manutenção do código e permite que diferentes seções da página sejam atualizadas independentemente umas das outras.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Gerenciamento de estado: O React oferece recursos para gerenciar o estado do aplicativo de forma eficiente. Ao criar uma página de destino, pode ser necessário gerenciar o estado de elementos interativos, como formulários ou modais.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Renderização condicional: Uma página de destino pode conter diferentes seções ou elementos que precisam ser renderizados com base em certas condições. Aprendemos a utilizar as estruturas de controle do JavaScript, como o operador ternário ou o uso de declarações condicionais, para renderizar diferentes partes da página com base nas condições específicas.
 
-### `npm test`
+Estilização: Ao criar uma página de destino, a estilização é uma parte crucial para fornecer uma experiência visual atraente. Com React puro, aprendemos a aplicar estilos aos componentes usando classes CSS, inline styles e bibliotecas de estilização como o Styled Components. Também aprendemos a utilizar a modularidade do CSS para evitar conflitos e manter um código organizado.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Autores
 
-### `npm run build`
+- [@sasacampi](https://github.com/sasacampi)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Referência
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - [Figma File](https://www.figma.com/file/U2GW0zQLnCR6vSL5Q0mSSN/Travel-Agency-Landing-Page-(Community))
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
