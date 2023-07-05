@@ -1,134 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Volkhov:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
 
 *,*::after,*::before{
     box-sizing: border-box;
 }
 
 body{
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight:500; 
   margin:0;
-}
-.content {
-  height: 200vh;
-  background-image:url(//i.picsum.photos/id/1072/3872/2592.jpg?hmac=I5d8vixhn6Ne9Ao1YQdtHfxS2YKNyx6_Bu8N_V1-ovk);
-  background-blend-mode:multiply;
-  background-size:cover;
-  display:grid;
-  place-items:center;
 }
 
 /*header starts here */
 
 .navbar--logo {
-    font-family: 'Volkhov', serif;
+  font-family: 'Volkhov', serif;
+  color: #222;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.009rem;
+  padding-left: 0;
 }
 
 header {
-  width:100%;
-  background: #fff;
-  position:fixed;
-  z-index: 999;
-  text-align: center;
-  
+width:100%;
+background: #fff;
+position: relative;
+z-index: 999;
+text-align: center;
+
 }
 
 nav{
-  position:absolute;
-  text-align:left;
-  top:100%;
-  background: #FD8D3A;
-  width:100%;
-  
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
+position:absolute;
+text-align:left;
+top:100%;
+background: #FD8D3A;
+width:100%;
+transform: scale(1, 0);
+transform-origin: top;
+transition: transform 400ms ease-in-out;
 }
+
 nav ul {
-    
-  list-style: none;
-  margin:0;
-  padding:0;  
+  
+list-style: none;
+margin:0;
+padding:0;  
 }
 
 nav li {
-  margin-left: 1em;
-  margin-bottom: 1em;
+margin-left: 1em;
+margin-bottom: 1em;
 }
 
 li a{
-  text-transform: uppercase;
-  font-family: 'Volkhov', serif;
-  color: black;
+font-family: 'Poppins', serif;
+color: black;
 }
 
 a:hover {
-  color: #FA7436;
-  cursor:pointer;
+color: #FA7436;
+cursor:pointer;
 }
 
 .nav-toggle{
-  display:none;
+display:none;
 }
 
 .nav-toggle:checked ~ nav{  
-  transform: scale(1,1);
-  
+transform: scale(1,1);
+
 }
 .nav-toggle:checked ~ nav a{
-  opacity:1;
-  transition: all .1s ease-in-out .200s ; 
+opacity:1;
+transition: all .1s ease-in-out .200s ; 
 }
 
 nav a {
-  opacity:0;
-  transform: scale(1,0);
-  transition: opacity 150ms ease-in-out;
+opacity:0;
+transform: scale(1,0);
+transition: opacity 150ms ease-in-out;
 }
 
 .nav-toggle-label{
-  position:absolute;
-  top:0;
-  left:0;
-  margin-left: 1em;
-  height:100%;
-  display:flex;
-  place-items:center;  
+position:absolute;
+top:0;
+left:0;
+margin-left: 1em;
+height:180%;
+display:flex;
+place-items:center;  
 }
 
 .label-span, 
 .label-span::before,
 .label-span::after {
-  height:4px;
-  width:30px;
-  border:1px solid black;
-  background:black;
-  border-radius:20%;
+height:4px;
+width:30px;
+border:1px solid black;
+background:black;
+border-radius:20%;
 }
 .label-span::before,
 .label-span::after{
-  position:absolute;
-  content: '';
-  left: 0px;
+position:absolute;
+content: '';
+left: 0px;
 }
 .label-span::before{
-  top: 30px;  
+top: 30px;  
 }
 .label-span::after{
-  bottom: 30px;
+bottom: 30px;
 }
 .label-span:hover,
 .label-span:hover::after,
 .label-span:hover::before{
-  cursor:pointer;
-  border:1px solid var(--clr-title);
-  background:#FA7436;  
+cursor:pointer;
+border:1px solid var(--clr-title);
+background:#FA7436;  
 }
-
-
 
 @media screen and (min-width:800px) {
   .nav-toggle-label{
@@ -176,4 +170,158 @@ nav a {
   nav a:hover::before {
     transform:scale(1,1);
   }
+}
+
+
+// hero section starts here //
+
+.hero {
+  display: absolute;
+  align-items: center;
+
+}
+
+.hero--image {
+  float: right;
+  max-width: 50%; 
+}
+
+.hero h1, .hero h2 {
+  text-align: left;
+
+}
+
+.hero h1 {
+  padding-top: 5rem;
+  font-family: Volkhov;
+  color: #222;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+  padding-left: 4rem;
+}
+
+.hero > h1 > span {
+  color: #FA7436;
+}
+
+.hero h2 {
+  font-size: 1rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  padding-left: 4rem;
+}
+
+.btn {
+  border: 1px solid #FA7436;
+  border-radius: 0.3rem;
+  color: #FA7436;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2rem;
+  font-weight: 500;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+
+// media queries //
+.hero--image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .hero--image {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .hero h2 {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .btn {
+    margin-top: 0;
+    padding: 10px 10px;
+    width: 8rem;
+    height: 3rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero--image {
+    width: 80%;
+    height: auto;
+
+}
+
+.hero h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.hero h2 {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.btn {
+  margin-top: 0;
+  padding: 10px 10px;
+  width: 8rem;
+  height: 3rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .hero--image {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 993px) {
+  .hero--image {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+  .hero--image {
+    max-width: 45%; 
+  }
+
+}
+
+@media (min-width: 1401px) and (max-width: 2000px){
+  .hero--image {
+    max-width: 30%; 
+  }
+
+}
+
+@media (min-width: 2000px) and (max-width: 2700px){
+  .hero--image {
+    max-width: 25%; 
+  }
+
 }
