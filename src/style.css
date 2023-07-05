@@ -11,8 +11,6 @@ body{
   margin:0;
 }
 
-/*header starts here */
-
 .navbar--logo {
   font-family: 'Volkhov', serif;
   color: #222;
@@ -172,9 +170,6 @@ background:#FA7436;
   }
 }
 
-
-// hero section starts here //
-
 .hero {
   display: absolute;
   align-items: center;
@@ -233,8 +228,6 @@ background:#FA7436;
   cursor: pointer;
 }
 
-
-// media queries //
 .hero--image {
   width: 100%;
   height: auto;
