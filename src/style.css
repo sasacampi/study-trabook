@@ -378,10 +378,10 @@ background:#FA7436;
   box-shadow: none;
   border: none;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .card:hover .card-button {
+  transition: .3s all;
   display: block;
   position: absolute;
   top: 30%;
@@ -395,9 +395,9 @@ background:#FA7436;
 }
 
 .card:hover .card--image {
+  transition: .3s all;
   filter: grayscale(100%);
 }
-
 
 .card--image {
   width: 15.975rem;
