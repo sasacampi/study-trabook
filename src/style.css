@@ -550,6 +550,7 @@ background:#FA7436;
   display: flex;
   flex-direction: column;
   background-color: #F7F8FC;
+  z-index: 1;
 
 }
 
@@ -644,3 +645,9 @@ background:#FA7436;
   margin-top: 2rem;
 }
 
+.vacation--plans--plane {
+  width: 11.24356rem;
+  height: 8.17075rem;
+  flex-shrink: 0;
+  z-index: 0;
+}

@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import Exciting from '../img/exciting.svg'
 import SignUp from '../img/signup.svg'
 import Worth from '../img/worth.svg'
+import Airplane from '../img/airplane.png'
 
 export default function VacationPlans() {
     return (
       <div className="vacation--plans">
+        <img src={Airplane} className="vacation--plans--plane" alt="Plane Img"></img>
         <h1>Things you need <span>to do</span></h1>
         <p>We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford.</p>
         <div className="vacation--plans--li">
