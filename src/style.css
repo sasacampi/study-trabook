@@ -362,6 +362,43 @@ background:#FA7436;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.20);
 }
 
+.card-button {
+  display: none;
+  border-radius: 0.5rem;
+  background: var(--primary-o, #FA7436);
+  padding: 0.5625rem 1.3125rem 0.5625rem 1.375rem;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.card:hover .card-button {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card {
+  transition: filter 0.3s;
+}
+
+.card:hover .card--image {
+  filter: grayscale(100%);
+}
+
+
 .card--image {
   width: 15.975rem;
   height: 17.125rem;
