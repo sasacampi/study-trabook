@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import "./style.css"
 import Card from './components/Card'
 import data from "./data";
+import CenteredText from "./components/CenteredText";
+import VacationPlans from "./components/VacationPlans"
 
 export default function App() {
     const cards = data.map(item => {
@@ -20,9 +22,11 @@ export default function App() {
         <div>
             <Navbar />
             <Hero />
+            <CenteredText />
             <section className="cards-list">
                 {cards}
             </section>
+            <VacationPlans />
            
             
         </div>

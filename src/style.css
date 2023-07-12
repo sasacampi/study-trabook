@@ -11,6 +11,28 @@ body{
   margin:0;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ababab #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ababab;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
 .navbar--logo {
   font-family: 'Volkhov', serif;
   color: #222;
@@ -317,4 +339,167 @@ background:#FA7436;
     max-width: 25%; 
   }
 
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  font-size: 1rem;
+  flex: 0 0 auto;         
+  display: flex;         
+  flex-direction: column;  
+  width: 16rem;
+  height: 23.650rem;
+  border-radius: 0.625rem;
+  background: #FEFCFB;
+  box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.20);
+}
+
+.card--image {
+  width: 15.975rem;
+  height: 17.125rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.40);
+  margin-bottom: 9px;
+}
+
+.card--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  margin: 10px; 
+}
+
+.card--star {
+  height: 14px;
+  margin-right: 0.2rem;
+}
+
+.card--title {
+  color: var(--primary-b, #222);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: auto;
+
+}
+
+.card--rating {
+  color: var(--paragraph, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+.card--location--pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  margin: 10px; 
+}
+
+.img--card--location {
+  width: 0.78569rem;
+  height: 1rem;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.card--location {
+  color: var(--paragraph, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-right: auto;
+
+}
+
+.card--old--pricing {
+  color: var(--paragraph, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: line-through;
+  margin-right: 1rem;
+}
+
+.card--new--pricing {
+  color: var(--primary-o, #FA7436);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  background: #FFE7DB;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.centered-text {
+  margin-top: 5rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-text > h1 {
+  color: #222;
+  font-family: Volkhov;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.375rem;
+  margin-bottom: 1rem;
+}
+
+.centered-text > h1 > span {
+  color: #FA7436;
+}
+
+.centered-text > p {
+  width: 27rem;
+  color: var(--paragraph, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  padding-bottom: 3rem;
 }
