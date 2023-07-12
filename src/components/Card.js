@@ -4,17 +4,9 @@ import Star from '../img/star.png';
 import Location from '../img/location.svg'
 
 export default function Card(props) {
-
-
-    let badgeText
-    if (props.openSpots === 1) {
-        badgeText = "BOOK NOW"
-        }
-
     return (
     <div className="card">
        <button class="card-button">Book Now</button>
-        {badgeText && <div className="card--badge">{badgeText}</div>}
       <img
         src={require(`../img/${props.coverImg}`)} className="card--image" alt="Card Image"></img>
       <div className="card--container">
@@ -29,7 +21,6 @@ export default function Card(props) {
         <span className="card--old--pricing">${props.oldPrice}</span>
         <span className="card--new--pricing">${props.newPrice}</span>
       </div>
-
       </div>
   );
 }

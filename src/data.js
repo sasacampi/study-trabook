@@ -9,7 +9,6 @@ export default [
             rating: 4.8
         },
         location: "Spain",
-        openSpots: 2,
     },
     {
         id: 2,
@@ -21,7 +20,6 @@ export default [
             rating: 4.5,
         },
         location: "Italy",
-        openSpots: 2,
     },
     {
         id: 3,
@@ -33,7 +31,6 @@ export default [
             rating: 4.4,
         },
         location: "France",
-        openSpots: 2,
     },
     {
         id: 4,
@@ -45,7 +42,6 @@ export default [
             rating: 4.9,
         },
         location: "UK",
-        openSpots: 2,
     }
     
 ]

@@ -22,11 +22,12 @@ export default function App() {
         <div>
             <Navbar />
             <Hero />
+            <VacationPlans />
             <CenteredText />
             <section className="cards-list">
                 {cards}
             </section>
-            <VacationPlans />
+            
            
             
         </div>

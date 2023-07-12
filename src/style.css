@@ -195,6 +195,7 @@ background:#FA7436;
 .hero {
   display: absolute;
   align-items: center;
+  padding-bottom: 2rem;
 
 }
 
@@ -537,6 +538,109 @@ background:#FA7436;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 1.5rem;
   padding-bottom: 3rem;
 }
+
+
+.vacation--plans {
+  padding-top: 3rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F8FC;
+
+}
+
+.vacation--plans > h1 {
+  color: #222;
+  font-family: Volkhov;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.375rem;
+  margin-bottom: 1rem;
+}
+
+.vacation--plans > h1 > span {
+  color: #FA7436;
+}
+
+.vacation--plans > p {
+  width: 27.550rem;
+  color: var(--paragraph, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.vacation--plans--li {
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10%; 
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  width: 23.125rem;
+  height: 17.375rem;
+  flex-shrink: 0;
+  width: 350px;
+  height: 300px;
+  margin: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(102, 102, 102, 0.08);
+  background: #FFF;
+}
+
+.column > h1 {
+  color: var(--primary-b, #222);
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  display: flex;
+  width: 20rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  text-align: left;
+  padding-left: 1.5rem;
+  margin-top: 3rem;
+}
+
+.column > p {
+  color: var(--paragraph, #666);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+  display: flex;
+  width: 20rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  text-align: left;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.vacation--plans--li--img {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  margin-right: 14rem;
+  margin-top: 2rem;
+}
+
