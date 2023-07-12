@@ -396,7 +396,8 @@ background:#FA7436;
 }
 
 .card:hover .card--image {
-  transition: .3s all;
+  transition: .9s all;
+  transition-duration: 1.5s;
   filter: grayscale(100%);
 }
 
