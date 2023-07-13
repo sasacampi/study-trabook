@@ -6,6 +6,7 @@ import Card from './components/Card'
 import data from "./data";
 import CenteredText from "./components/CenteredText";
 import VacationPlans from "./components/VacationPlans"
+import TravelPackage from "./components/TravelPackage"
 
 export default function App() {
     const cards = data.map(item => {
@@ -27,7 +28,7 @@ export default function App() {
             <section className="cards-list">
                 {cards}
             </section>
-            
+            <TravelPackage />
            
             
         </div>

@@ -555,7 +555,20 @@ background:#FA7436;
 
 }
 
-.vacation--plans > h1 {
+.container {
+  display: flex;
+  align-items: center;
+  align-text: center;
+}
+
+.vacation--plans--plane {
+  width: 11.24356rem;
+  height: 8.17075rem;
+  flex-shrink: 0;
+  z-index: 0;
+}
+
+.vacation--plans--title > h1 {
   color: #222;
   font-family: Volkhov;
   font-size: 3rem;
@@ -563,13 +576,15 @@ background:#FA7436;
   font-weight: 700;
   line-height: 3.375rem;
   margin-bottom: 1rem;
+  margin-right: 10px;
+  margin-left: 10rem;
 }
 
-.vacation--plans > h1 > span {
+.vacation--plans--title > h1 > span {
   color: #FA7436;
 }
 
-.vacation--plans > p {
+.vacation--plans--title > p {
   width: 27.550rem;
   color: var(--paragraph, #666);
   text-align: center;
@@ -579,6 +594,7 @@ background:#FA7436;
   font-weight: 400;
   line-height: 1.5rem;
   padding-bottom: 3rem;
+  margin-left: 13rem;
 }
 
 .vacation--plans--li {
@@ -644,11 +660,4 @@ background:#FA7436;
   flex-shrink: 0;
   margin-right: 14rem;
   margin-top: 2rem;
-}
-
-.vacation--plans--plane {
-  width: 11.24356rem;
-  height: 8.17075rem;
-  flex-shrink: 0;
-  z-index: 0;
 }
