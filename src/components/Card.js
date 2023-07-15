@@ -16,7 +16,7 @@ export default function Card(props) {
         </div>
       
       <div className="card--location--pricing">
-        <img src={Location} className="img--card--location" alt="Location"></img>
+        <img src={Location} className="img--card--icon" alt="Location"></img>
         <span className="card--location">{props.location}</span>
         <span className="card--old--pricing">${props.oldPrice}</span>
         <span className="card--new--pricing">${props.newPrice}</span>

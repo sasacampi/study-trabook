@@ -9,12 +9,12 @@ export default function VacationPlans() {
     return (
       <div className="vacation--plans">
         <div className="container">
-          <div className="vacation--plans--title">
+          <div className="container-title">
             <h1>Things you need <span>to do</span></h1>
             <p>We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford.</p>
         </div> 
-        <div className="vacation--plans--img">
-          <img src={Airplane} className="vacation--plans--plane" alt="Plane Img"></img>
+        <div className="container-title-img">
+          <img src={Airplane} className="container-title-img" alt="Plane Img"></img>
         </div>
       </div>
 

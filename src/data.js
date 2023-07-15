@@ -1,5 +1,5 @@
-export default [
-    {
+const trips = [
+ {
         id: 1,
         title: "Madrid",
         oldPrice: 950,
@@ -42,6 +42,43 @@ export default [
             rating: 4.9,
         },
         location: "UK",
-    }
-    
+    },
 ]
+
+const events = [ 
+    {
+        id: 1,
+        city: "Portofino",
+        country: "Italy",
+        coverImg: "portofinoitaly.jpg",
+        price: "5,42k",
+        days: 10,
+        stats: {
+            rating: 4.9,
+        },
+    },
+    {
+        id: 1,
+        city: "Rome",
+        country: "Italy",
+        coverImg: "londoneye.jpg",
+        price: "2,42k",
+        days: "07",
+        stats: {
+            rating: 4.8,
+        },
+    },
+    {
+        id: 1,
+        city: "Rome",
+        country: "Italy",
+        coverImg: "osakajp.jpg",
+        price: "5,42k",
+        days: 10,
+        stats: {
+            rating: 4.8,
+        },
+    },
+]
+
+export { trips, events };
