@@ -70,8 +70,8 @@ const events = [
     },
     {
         id: 1,
-        city: "Rome",
-        country: "Italy",
+        city: "Osaka",
+        country: "Japan",
         coverImg: "osakajp.jpg",
         price: "5,42k",
         days: 10,

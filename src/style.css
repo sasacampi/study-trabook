@@ -418,7 +418,6 @@ background:#FA7436;
   justify-content: center;
   width: 240px;
   margin: 10px; 
-  font-size: 1rem;
 }
 
 .card--star {
@@ -669,19 +668,29 @@ background:#FA7436;
   color: var(--primary-b, #222);
   text-align: center;
   font-family: Poppins;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 0.9rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-right: auto;
 
 }
 
 .card--location--country {
-  padding-left: 0.2rem;
+  color: var(--primary-b, #222);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 0.2rem;
+
 }
 
 .card--price {
