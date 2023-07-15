@@ -59,8 +59,8 @@ const events = [
     },
     {
         id: 1,
-        city: "Rome",
-        country: "Italy",
+        city: "London",
+        country: "UK",
         coverImg: "londoneye.jpg",
         price: "2,42k",
         days: "07",

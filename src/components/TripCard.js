@@ -13,7 +13,13 @@ export default function TipCard(props) {
       <span className="card--location--city">{props.city},</span>
       <span className="card--location--country">{props.country}</span>
       <span className="card--price">${props.price}</span>
-
-</div></div>
+      </div>
+      <div className="card--location--info">
+      <img src={Nav} className="img--card--icon" alt="Navigation"></img>
+      <span className="card--location">{props.days} Days Trip</span>
+      <img src={Star} className="card--star" alt="Star"></img>
+        <span className="card--rating">{props.stats.rating}</span>
+    </div>
+      </div>
   );
 }

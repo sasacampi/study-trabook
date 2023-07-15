@@ -218,6 +218,7 @@ background:#FA7436;
   font-weight: 700;
   line-height: 3.5rem;
   padding-left: 4rem;
+  
 }
 
 .hero > h1 > span {
@@ -361,6 +362,7 @@ background:#FA7436;
   border-radius: 0.625rem;
   background: #FEFCFB;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.20);
+  
 }
 
 .card-button {
@@ -416,6 +418,7 @@ background:#FA7436;
   justify-content: center;
   width: 240px;
   margin: 10px; 
+  font-size: 1rem;
 }
 
 .card--star {
@@ -664,7 +667,7 @@ background:#FA7436;
 
 // best vacation plan //
 
-.card--location--city, .card--location--country {
+.card--location--city{
   color: var(--primary-b, #222);
   text-align: center;
   font-family: Poppins;
@@ -679,26 +682,29 @@ background:#FA7436;
 
 }
 
-
-
-/* 
-.card--rating {
-  color: var(--paragraph, #666);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-
+.card--location--country {
+  padding-left: 0.2rem;
 }
 
-.card--location--info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 240px;
-  margin: 10px; 
-}
+.card--price {
+    color: var(--primary-o, #FA7436);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    margin-left: auto;
+  }
+
+  .card--location--info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    margin: 10px; 
+  }
 
 .card--location {
   color: var(--paragraph, #666);
@@ -711,14 +717,3 @@ background:#FA7436;
   margin-right: auto;
 
 }
-
-.card--price {
-  color: var(--primary-o, #FA7436);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5rem;
-  border-radius: 0.25rem;
-} */

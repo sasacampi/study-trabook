@@ -4,7 +4,7 @@ import Tree from '../img/tree.png'
 
 export default function TravelPackage() {
     return (
-        <div className="vacation--plans">
+        <div className="centered-text">
         <div className="container">
           <div className="container-title">
             <h1>Best <span>vacation plan</span></h1>
