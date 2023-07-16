@@ -8,6 +8,7 @@ import VacationPlans from "./components/VacationPlans";
 import TravelPackage from "./components/TravelPackage";
 import TripCard from "./components/TripCard";
 import {trips, events} from './data';
+import Reviews from './components/Reviews'
 
 export default function App() {
     const cards = trips.map(item => {
@@ -43,7 +44,7 @@ export default function App() {
             <section className="cards-list">
                 {tripcard}
             </section>
-           
+           <Reviews />
             
         </div>
     )
