@@ -43,6 +43,7 @@ const trips = [
         },
         location: "UK",
     },
+    
 ]
 
 const events = [ 
