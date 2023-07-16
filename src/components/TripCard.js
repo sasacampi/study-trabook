@@ -5,6 +5,7 @@ import Nav from '../img/Navigation.svg';
 
 export default function TripCard(props) {
     return (
+      
     <div className="tripcard">
        <button class="card-button">Book Now</button>
       <img
@@ -21,5 +22,6 @@ export default function TripCard(props) {
         <span className="card--rating">{props.stats.rating}</span>
     </div>
       </div>
+       
   );
 }

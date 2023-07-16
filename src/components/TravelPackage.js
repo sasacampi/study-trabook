@@ -13,6 +13,7 @@ export default function TravelPackage() {
         <div className="container-title-img">
           <img src={Tree} className="vacation--plans--tree" alt="Tree Img"></img>
         </div>
+        
       </div>
       </div>
     )

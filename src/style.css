@@ -362,6 +362,7 @@ background:#FA7436;
   border-radius: 0.625rem;
   background: #FEFCFB;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.20);
+  margin-bottom: 20px;
   
 }
 
@@ -544,7 +545,6 @@ background:#FA7436;
   line-height: 1.5rem;
   padding-bottom: 3rem;
 }
-
 .vacation--plans {
   padding-top: 3rem;
   text-align: center;
@@ -670,6 +670,7 @@ background:#FA7436;
   align-items: center;
   justify-content: center;
   width: 340px;
+  height: 25px;
   margin: 10px; 
 }
 
@@ -680,11 +681,12 @@ background:#FA7436;
   display: flex;         
   flex-direction: column;  
   width: 22.400rem;
-  height: 25.650rem;
+  height: 26.650rem;
   border-radius: 0.625rem;
   background: #FEFCFB;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.20);
   justify-content: center;
+  margin-bottom: 20px;
   
 }
 
