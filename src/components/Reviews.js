@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 
+
 export default function Reviews() {
     return (
       <div className="centered-text">
