@@ -16,6 +16,10 @@ Durante esse projeto, eu tive a oportunidade de aprender diversos aspectos impor
   
 - Durante o desenvolvimento, enfrentei alguns desafios no código, como a duplicação de cards, margens desiguais e problemas de alinhamento do título. No entanto, aprendi que a definição de identificadores únicos é essencial para evitar duplicações indesejadas. Além disso, ajustar cuidadosamente as margens garante um espaçamento uniforme entre os elementos. Aprendi também a utilizar propriedades CSS, como text-overflow, white-space e overflow, para lidar com o ajuste do título ao tamanho do card, evitando problemas de layout. Essas experiências me ajudaram a aprimorar minhas habilidades e compreender melhor a importância do planejamento cuidadoso e da resolução eficiente de problemas durante o desenvolvimento de código.
 
+- ## Screenshots
+
+![App Screenshot](https://i.imgur.com/WMMAOxy.png)
+
 ## Autores
 
 - [@sasacampi](https://github.com/sasacampi)
