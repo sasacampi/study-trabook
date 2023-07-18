@@ -785,3 +785,70 @@ background:#FA7436;
   line-height: 2rem;
   margin-right: auto;
 }
+
+.updatecard {
+  margin-top: 4rem;
+  position: relative;
+  font-size: 1rem;
+  flex: 0 0 auto;         
+  display: flex;         
+  flex-direction: column;  
+  width: 16rem;
+  height: 23.650rem;
+  border-radius: 0.625rem;
+  background: #FEFCFB;
+  box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.20);
+  margin-bottom: 20px;
+  
+}
+
+.updatecard--image {
+  width: 15.975rem;
+  height: 17.125rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.40);
+  margin-bottom: 9px;
+}
+
+
+.updatecard--container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin: 10px; 
+  line-height: 1.5rem;
+}
+
+
+.updatecard--title{
+  color: var(--primary-b, #222);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  text-align: left;
+
+}
+  .updatecard--body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    margin: 10px; 
+  }
+
+.updatecard--date {
+  color: var(--paragraph, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-right: auto;
+}

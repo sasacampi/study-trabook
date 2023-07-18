@@ -82,4 +82,27 @@ const events = [
     },
 ]
 
-export { trips, events };
+const travel = [
+    {   id: 5,
+        newsletter: "The Amazing Difference a Year of Travelling.",
+        date: "July 27, 2021",
+        coverImg: "area.png",
+    },
+    {   id: 6,
+        newsletter: "Travel far enough, you meet yourself.",
+        date: "July 27, 2021",
+        coverImg: "beach.png",
+    },
+    {   id: 7,
+        newsletter: "How to Save Money While Visiting Africa.",
+        date: "July 27, 2021",
+        coverImg: "mosk.png",
+    },
+    {   id: 8,
+        newsletter: "Reflections on 5 Months of Travel: Time to Hang.",
+        date: "July 27, 2021",
+        coverImg: "mountain.png",
+    }
+]
+
+export { trips, events, travel, };
