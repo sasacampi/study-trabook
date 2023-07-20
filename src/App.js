@@ -13,6 +13,7 @@ import TestimonialsCard from './components/TestimonialsCard';
 import Update from "./components/Update";
 import UpdateCard from "./components/UpdateCard";
 import Footer from "./components/Footer";
+import Newsletter from "./components/Newsletter";
 
 export default function App() {
     const cards = trips.map(item => {
@@ -64,6 +65,7 @@ export default function App() {
            <section className="cards-list">
                 {updatecard}
             </section>
+            <Newsletter />
             <Footer />
             
             
