@@ -32,7 +32,7 @@ body{
     border-radius: 10px;
     border: 3px solid #ffffff;
   }
-
+ 
 .navbar--logo {
   font-family: 'Volkhov', serif;
   color: #222;
@@ -257,91 +257,116 @@ background:#FA7436;
   height: auto;
 }
 
-@media (max-width: 576px) {
-  .hero--image {
-    width: 100%;
-    height: auto;
-  }
 
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
   .hero h1 {
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 2rem; 
+    line-height: 2.5rem;
   }
 
   .hero h2 {
-    font-size: 0.9rem;
+    font-size: 1rem; 
     line-height: 1.5rem;
   }
+
+  .hero--image {
+    max-width: 70%; 
+    float: none; 
+  }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  
+  .hero {
+    flex-direction: column-reverse; 
+    text-align: center; 
+  }
+
+  .hero--image {
+    max-width: 75%; 
+    float: left; 
+    margin-bottom: 1rem; 
+  }
+
+  .hero h1 {
+    padding-top: 65%;
+    padding-left: 3.5rem; 
+  }
+
   .btn {
-    margin-top: 0;
-    padding: 10px 10px;
-    width: 8rem;
-    height: 3rem;
-    font-size: 0.9rem;
-    line-height: 1rem;
+    display: flex;
+  }
+
+  .navbar--logo {
+    padding-right: 10rem;
   }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
-  .hero--image {
-    width: 80%;
-    height: auto;
 
-}
-
-.hero h1 {
-  font-size: 2rem;
-  line-height: 2.25rem;
-}
-
-.hero h2 {
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-}
-.btn {
-  margin-top: 0;
-  padding: 10px 10px;
-  width: 8rem;
-  height: 3rem;
-  font-size: 0.9rem;
-  line-height: 1rem;
-}
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .hero--image {
-    width: 80%;
-    height: auto;
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+ 
+  .hero {
+    flex-direction: column-reverse; 
+    text-align: center; 
   }
-}
 
-@media (min-width: 993px) {
   .hero--image {
-    width: 80%;
-    height: auto;
+    max-width: 70%; 
+    float: right; 
+    margin-bottom: 1rem; 
   }
-}
 
-@media (min-width: 1200px) and (max-width: 1400px){
-  .hero--image {
-    max-width: 45%; 
+  .hero h1 {
+    padding-left: 3.5rem; 
+  }
+
+  .btn {
+    display: flex;
+  }
+
+  .navbar--logo {
+    padding-right: 10rem;
   }
 
 }
 
-@media (min-width: 1401px) and (max-width: 2000px){
+@media screen and (min-width: 1201px) {
+  .hero {
+    flex-direction: row; 
+  }
+
   .hero--image {
-    max-width: 30%; 
+    max-width: 50%; 
+    float: right; 
+  }
+
+  .hero h1 {
+    padding-top: 5rem; 
+    padding-left: 4rem; 
   }
 
 }
 
-@media (min-width: 2000px) and (max-width: 2700px){
+@media screen and (min-width: 1369px) {
+  .hero {
+    flex-direction: row; 
+  }
+
   .hero--image {
-    max-width: 25%; 
+    max-width: 70vh; 
+    float: right; 
+  }
+
+  .hero h1 {
+    padding-top: 5rem; 
+    padding-left: 4rem; 
   }
 
 }
+
 
 .cards-list {
   display: flex;
