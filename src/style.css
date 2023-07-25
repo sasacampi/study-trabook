@@ -743,6 +743,10 @@ nav a {
 
 .footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
   background: #f7f8fc;
