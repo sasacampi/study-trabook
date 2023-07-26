@@ -8,7 +8,6 @@ import VacationPlans from "./components/VacationPlans";
 import TravelPackage from "./components/TravelPackage";
 import TripCard from "./components/TripCard";
 import { trips, events, travel } from "./data";
-import TestimonialsCard from "./components/TestimonialsCard";
 import Update from "./components/Update";
 import UpdateCard from "./components/UpdateCard";
 import Footer from "./components/Footer";
@@ -36,7 +35,6 @@ export default function App() {
       <section className="cards-list">{cards}</section>
       <TravelPackage />
       <section className="cards-list">{tripcard}</section>
-      <TestimonialsCard />
       <Update />
       <section className="cards-list">{updatecard}</section>
       <Newsletter />

@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 0;
+  background-color: #fff;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -23,6 +24,7 @@ body {
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 16px;
+  background-color: #fff;
 }
 
 *::-webkit-scrollbar-track {
@@ -52,6 +54,7 @@ header {
   position: relative;
   z-index: 999;
   text-align: center;
+  place-items: center;
 }
 
 nav {
@@ -190,6 +193,8 @@ nav a {
   }
 }
 
+/* ===== HERO STARTS HERE ===== */
+
 .hero {
   display: flex;
   align-items: center;
@@ -197,6 +202,12 @@ nav a {
   width: auto;
   height: auto;
   padding-bottom: 5rem;
+}
+
+.hero--image {
+  width: 100%;
+  max-width: 45rem;
+  min-height: auto;
 }
 
 .hero--text {
@@ -243,6 +254,9 @@ nav a {
   cursor: pointer;
 }
 
+/* ===== HERO ENDS HERE ===== */
+/* ===== EXCLUSIVE DEALS STARTS HERE ===== */
+
 .cards-list {
   display: flex;
   flex-wrap: nowrap;
@@ -258,8 +272,8 @@ nav a {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  width: 16rem;
-  height: 23.65rem;
+  max-width: 16rem;
+  min-height: 23.65rem;
   border-radius: 0.625rem;
   background: #fefcfb;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
@@ -305,8 +319,9 @@ nav a {
 }
 
 .card--image {
-  width: 15.975rem;
-  height: 17.125rem;
+  width: 100%;
+  max-width: 15.975rem;
+  min-height: 17.125rem;
   object-fit: cover;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.4);
@@ -317,12 +332,12 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 240px;
+  max-width: 240px;
   margin: 10px;
 }
 
 .card--star {
-  height: 14px;
+  min-height: 14px;
   margin-right: 0.2rem;
 }
 
@@ -353,13 +368,15 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 240px;
+  width: 100%;
+  max-width: 240px;
   margin: 10px;
 }
 
 .img--card--icon {
+  max-width: 100%;
   width: 0.78569rem;
-  height: 1rem;
+  min-height: 1rem;
   flex-shrink: 0;
   margin-right: 5px;
 }
@@ -432,7 +449,8 @@ nav a {
 }
 
 .centered-text > p {
-  width: 27rem;
+  width: 100%;
+  max-width: 27rem;
   color: var(--paragraph, #666);
   text-align: center;
   font-family: Poppins;
@@ -442,6 +460,9 @@ nav a {
   line-height: 1.5rem;
   padding-bottom: 3rem;
 }
+
+/* ===== EXCLUSIVE DEALS AND DISCOUNTS ENDS HERE ===== */
+/* ===== BEST VACATION PLANS STARTS HERE ===== */
 
 .vacation--plans {
   padding-top: 3rem;
@@ -460,9 +481,16 @@ nav a {
   line-height: 1.5rem;
 }
 
+.container-title {
+  width: 100%;
+  max-width: 55rem;
+  min-height: auto;
+}
+
 .container-title-img {
-  width: 11.24356rem;
-  height: 8.17075rem;
+  width: 100%;
+  max-width: 11.24356rem;
+  min-height: 8.17075rem;
   flex-shrink: 0;
   z-index: 0;
 }
@@ -476,7 +504,7 @@ nav a {
   line-height: 3.375rem;
   margin-bottom: 1rem;
   margin-right: 10px;
-  margin-left: 10rem;
+  margin-left: 12rem;
 }
 
 .container-title > h1 > span {
@@ -484,7 +512,6 @@ nav a {
 }
 
 .container-title > p {
-  width: 27.55rem;
   color: var(--paragraph, #666);
   text-align: center;
   font-family: Poppins;
@@ -502,17 +529,18 @@ nav a {
   grid-gap: 10%;
   display: grid;
   grid-template-columns: 350px 350px 350px;
-  width: 23.125rem;
-  height: 17.375rem;
+  min-height: 17.375rem;
   flex-shrink: 0;
-  width: 350px;
-  height: 300px;
+  width: 100%;
+  max-width: 350px;
+  min-height: 300px;
   margin: 10px;
 }
 
 .vacation--plans--li--img {
+  max-width: 100%;
   width: 3rem;
-  height: 3rem;
+  min-height: 3rem;
   flex-shrink: 0;
   margin-right: 14rem;
   margin-top: 2rem;
@@ -537,7 +565,8 @@ nav a {
   font-weight: 600;
   line-height: 1.5rem;
   display: flex;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   flex-direction: column;
   flex-shrink: 0;
   text-align: left;
@@ -553,7 +582,8 @@ nav a {
   font-weight: 400;
   line-height: 1.625rem;
   display: flex;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   flex-direction: column;
   flex-shrink: 0;
   text-align: left;
@@ -567,7 +597,8 @@ nav a {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  width: 22.4rem;
+  width: 100%;
+  max-width: 22.4rem;
   height: 25rem;
   border-radius: 0.625rem;
   background: #fefcfb;
@@ -597,8 +628,9 @@ nav a {
 }
 
 .tripcard--image {
-  width: 22.4rem;
-  height: 18rem;
+  width: 100%;
+  max-width: 22.4rem;
+  min-height: 18rem;
   object-fit: cover;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.4);
@@ -609,7 +641,8 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   margin: 10px;
   line-height: 1.5rem;
 }
@@ -655,13 +688,15 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   margin: 10px;
 }
 
 .img--tripcard--icon {
-  width: 1.5rem;
-  height: 1rem;
+  width: 100%;
+  max-width: 1.5rem;
+  min-height: 1rem;
   flex-shrink: 0;
   margin-right: 5px;
 }
@@ -677,6 +712,9 @@ nav a {
   margin-right: auto;
 }
 
+/* ===== BEST VACATION PLAN ENDS HERE ===== */
+/* ===== GET UPDATE STARTS HERE ===== */
+
 .updatecard {
   margin-top: 4rem;
   position: relative;
@@ -684,8 +722,9 @@ nav a {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  width: 16rem;
-  height: 23.65rem;
+  width: 100%;
+  max-width: 16rem;
+  min-height: 23.65rem;
   border-radius: 0.625rem;
   background: #fefcfb;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
@@ -694,8 +733,9 @@ nav a {
 }
 
 .updatecard--image {
-  width: 15.975rem;
-  height: 17.125rem;
+  width: 100%;
+  max-width: 15.975rem;
+  min-height: 17.125rem;
   object-fit: cover;
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.4);
@@ -706,7 +746,8 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   margin: 10px;
   line-height: 1.5rem;
 }
@@ -726,7 +767,8 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   margin: 10px;
 }
 
@@ -740,12 +782,14 @@ nav a {
   line-height: 2rem;
   margin-right: auto;
 }
+/* ===== GET UPDATE ENDS HERE ===== */
+/* ===== FOOTER STARTS HERE ===== */
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
+  min-height: auto;
   display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
@@ -776,6 +820,8 @@ nav a {
 }
 
 .footer__logo__img {
+  width: 100%;
+  max-width: 1.5rem;
   display: inline-block;
 }
 
@@ -795,12 +841,14 @@ nav a {
   font-style: normal;
   font-weight: 500;
   line-height: 2rem;
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   margin-left: 1rem;
 }
 
 .footer__socials__img {
-  width: 70px;
+  width: 100%;
+  max-width: 70px;
 }
 
 .footer__socials__img:hover {
@@ -811,7 +859,8 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
+  min-height: 36px;
+  width: 100%;
   max-width: max-content;
   background-color: rgb(33, 33, 33, 0.07);
   border-radius: 100px;
@@ -900,11 +949,14 @@ nav a {
   }
 }
 
+/* ===== FOOTER ENDS HERE ===== */
+/* =====  NEWSLETTER STARTS HERE ===== */
+
 .newsletter-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  min-height: auto;
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
@@ -920,8 +972,9 @@ nav a {
 .bg {
   border-radius: 1rem;
   background: var(--primary-o, #fa7436);
-  width: 73.125rem;
-  height: 26rem;
+  width: 100%;
+  max-width: 73.125rem;
+  min-height: 26rem;
   flex-shrink: 0;
 }
 
@@ -933,13 +986,16 @@ nav a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 44.25rem;
+  width: 100%;
+  max-width: 44.25rem;
   margin-top: 5rem;
 }
 
 .form-container {
   position: relative;
-  width: 500px;
+  width: 100%;
+  max-width: 550px;
+  min-height: auto;
 }
 
 .input-wrapper {
@@ -955,8 +1011,9 @@ nav a {
   line-height: normal;
   border-radius: 0.625rem;
   background: var(--white, #fff);
-  width: 32rem;
-  height: 4.25rem;
+  width: 100%;
+  max-width: 34rem;
+  min-height: 4.25rem;
   flex-shrink: 0;
   padding-right: 60px;
   padding-left: 20px;
@@ -968,8 +1025,9 @@ nav a {
   position: absolute;
   top: 0.55rem;
   right: 0;
-  width: 8.25rem;
-  height: 3.125rem;
+  witdh: 100%;
+  max-width: 10rem;
+  min-height: 3.125rem;
   border-radius: 0.5rem;
   background: var(--primary-o, #fa7436);
   color: #fff;
@@ -984,4 +1042,8 @@ nav a {
   display: inline-flex;
   padding: 0.8125rem 1.625rem;
   margin-bottom: 50rem;
+  margin-right: 1rem;
 }
+
+/* =====  NEWSLETTER ENDS HERE ===== */
+/* ===== Mobile Responsive Styles ===== */
