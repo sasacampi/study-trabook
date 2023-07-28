@@ -485,6 +485,9 @@ nav a {
   align-items: center;
   padding: 0 2em;
   background-color: #f7f8fc;
+  width: 100%;
+  min-height: 40rem;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -495,15 +498,12 @@ nav a {
 
 .container-title {
   width: 100%;
-  max-width: 55rem;
+  max-width: 75rem;
   min-height: auto;
-}
-
-.container-title-img {
-  width: 100%;
-  max-width: 11.24356rem;
-  min-height: 8.17075rem;
-  flex-shrink: 0;
+  background-image: url("./img/airplane.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 16%;
 }
 
 .container-title > h1 {
@@ -513,6 +513,7 @@ nav a {
   font-style: normal;
   font-weight: 700;
   line-height: 3.375rem;
+  margin-right: 1rem;
 }
 
 .container-title > h1 > span {
@@ -531,37 +532,32 @@ nav a {
 }
 
 .vacation--plans--li {
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-gap: 10%;
-  display: grid;
+  gap: 20px;
+  overflow-x: auto;
+  justify-content: center;
+  overflow-x: hidden;
   grid-template-columns: 350px 350px 350px;
-  min-height: 17.375rem;
   flex-shrink: 0;
-  width: 100%;
-  max-width: 350px;
-  min-height: 300px;
-  margin: 10px;
+}
+
+.column {
+  position: relative;
+  flex-basis: auto;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(102, 102, 102, 0.08);
+  background: #fff;
 }
 
 .vacation--plans--li--img {
-  max-width: 100%;
-  width: 3rem;
+  width: 100%;
+  max-width: 3rem;
   min-height: 3rem;
   flex-shrink: 0;
   margin-right: 14rem;
   margin-top: 2rem;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 0.5rem;
-  border: 2px solid rgba(102, 102, 102, 0.08);
-  background: #fff;
 }
 
 .column > h1 {
@@ -571,10 +567,8 @@ nav a {
   font-style: normal;
   font-weight: 600;
   line-height: 1.5rem;
-  display: flex;
   width: 100%;
   max-width: 20rem;
-  flex-direction: column;
   flex-shrink: 0;
   text-align: left;
   padding-left: 1.5rem;
@@ -588,7 +582,6 @@ nav a {
   font-style: normal;
   font-weight: 400;
   line-height: 1.625rem;
-  display: flex;
   width: 100%;
   max-width: 20rem;
   flex-direction: column;
@@ -598,23 +591,52 @@ nav a {
   margin-bottom: 2rem;
 }
 
-.tripcard {
-  position: relative;
-  font-size: 1rem;
-  flex: 0 0 auto;
+// Best vacation plan starts here
+
+.best--vacation--plans {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.bvp--container {
   width: 100%;
-  max-width: 22.4rem;
-  height: 25rem;
+  width: 21.75rem;
+  height: 23.65rem;
+  gap: 20px;
   border-radius: 0.625rem;
   background: #fefcfb;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
-  justify-content: center;
-  margin-bottom: 20px;
+  overflow: hidden;
 }
 
-.tripcard:hover .card-button {
+.bvp--img {
+  width: 100%;
+  height: 16rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.bvp--card--location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 330px;
+  margin: 10px;
+}
+
+.bvp--card--info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 330px;
+  margin: 10px;
+}
+
+.best--vacation--plans:hover .card-button {
   transition: 0.3s all;
   display: block;
   position: absolute;
@@ -624,34 +646,14 @@ nav a {
   z-index: 1;
 }
 
-.tripcard {
+.best--vacation--plans {
   transition: filter 0.3s;
 }
 
-.tripcard:hover .tripcard--image {
+.best--vacation--plans:hover .bvp-img {
   transition: 0.9s all;
   transition-duration: 1.5s;
   filter: grayscale(100%);
-}
-
-.tripcard--image {
-  width: 100%;
-  max-width: 22.4rem;
-  min-height: 18rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background: rgba(0, 0, 0, 0.4);
-  margin-bottom: 9px;
-}
-
-.tripcard--container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 340px;
-  margin: 10px;
-  line-height: 1.5rem;
 }
 
 .card--location--city {
@@ -691,15 +693,6 @@ nav a {
   margin-left: auto;
 }
 
-.card--location--info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 340px;
-  margin: 10px;
-}
-
 .img--tripcard--icon {
   width: 100%;
   max-width: 1.5rem;
@@ -723,20 +716,16 @@ nav a {
 /* ===== GET UPDATE STARTS HERE ===== */
 
 .updatecard {
-  margin-top: 4rem;
   position: relative;
   font-size: 1rem;
   flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-width: 16rem;
-  min-height: 23.65rem;
   border-radius: 0.625rem;
   background: #fefcfb;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
-  margin-bottom: 20px;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .updatecard--image {
@@ -747,12 +736,10 @@ nav a {
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.4);
   margin-bottom: 9px;
+  cursor: pointer;
 }
 
 .updatecard--container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   max-width: 250px;
   margin: 10px;
@@ -769,7 +756,9 @@ nav a {
   overflow-wrap: break-word;
   white-space: pre-wrap;
   text-align: left;
+  cursor: pointer;
 }
+
 .updatecard--body {
   display: flex;
   align-items: center;
@@ -789,6 +778,7 @@ nav a {
   line-height: 2rem;
   margin-right: auto;
 }
+
 /* ===== GET UPDATE ENDS HERE ===== */
 /* ===== FOOTER STARTS HERE ===== */
 
@@ -808,8 +798,6 @@ nav a {
 }
 
 .footer__addr {
-  margin-right: 30em;
-  margin-bottom: 2em;
 }
 
 .footer__logo {

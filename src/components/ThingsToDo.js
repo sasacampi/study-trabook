@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import Exciting from "../img/exciting.svg";
 import SignUp from "../img/signup.svg";
 import Worth from "../img/worth.svg";
-import Airplane from "../img/airplane.png";
 
 export default function VacationPlans() {
   return (
@@ -17,13 +16,6 @@ export default function VacationPlans() {
             We ensure that you’ll embark on a perfectly planned, safe vacation
             at a price you can afford.
           </p>
-        </div>
-        <div className="container-title-img">
-          <img
-            src={Airplane}
-            className="container-title-img"
-            alt="Plane Img"
-          ></img>
         </div>
       </div>
 
