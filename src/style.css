@@ -7,7 +7,13 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 0;
@@ -202,6 +208,7 @@ nav a {
   width: auto;
   height: auto;
   padding-bottom: 5rem;
+  overflow-x: hidden;
 }
 
 .hero--image {
@@ -259,8 +266,9 @@ nav a {
 
 .cards-list {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   overflow-x: auto;
   justify-content: center;
   overflow-x: hidden;
@@ -268,10 +276,8 @@ nav a {
 
 .card {
   position: relative;
+  flex-basis: auto;
   font-size: 1rem;
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
   max-width: 16rem;
   min-height: 23.65rem;
   border-radius: 0.625rem;
@@ -288,7 +294,7 @@ nav a {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 2rem;
@@ -345,7 +351,7 @@ nav a {
   color: var(--primary-b, #222);
   text-align: center;
   font-family: Poppins;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 0.9rem;
@@ -427,58 +433,64 @@ nav a {
 }
 
 .centered-text {
-  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
+  padding: 0 2em;
 }
 
 .centered-text > h1 {
+  width: 100%;
+  max-width: 45rem;
+  min-height: 2rem;
   color: #222;
   font-family: Volkhov;
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.375rem;
-  margin-bottom: 1rem;
+  line-height: 3.5rem;
+  overflow-y: hidden;
+  margin-top: 2rem;
+}
+
+.centered-text > p {
+  width: 100%;
+  max-width: 27rem;
+  min-height: 5rem;
+  color: var(--paragraph, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
 }
 
 .centered-text > h1 > span {
   color: #fa7436;
 }
 
-.centered-text > p {
-  width: 100%;
-  max-width: 27rem;
-  color: var(--paragraph, #666);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem;
-  padding-bottom: 3rem;
-}
-
 /* ===== EXCLUSIVE DEALS AND DISCOUNTS ENDS HERE ===== */
-/* ===== BEST VACATION PLANS STARTS HERE ===== */
+/* ===== BEST VACATION PLANS/THINGS TO DO STARTS HERE ===== */
 
 .vacation--plans {
-  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
+  padding: 0 2em;
   background-color: #f7f8fc;
-  z-index: 1;
 }
 
 .container {
   display: flex;
-  align-items: center;
-  align-text: center;
-  line-height: 1.5rem;
+  flex-wrap: no-wrap;
+  padding: 0 2em;
 }
 
 .container-title {
@@ -492,7 +504,6 @@ nav a {
   max-width: 11.24356rem;
   min-height: 8.17075rem;
   flex-shrink: 0;
-  z-index: 0;
 }
 
 .container-title > h1 {
@@ -502,9 +513,6 @@ nav a {
   font-style: normal;
   font-weight: 700;
   line-height: 3.375rem;
-  margin-bottom: 1rem;
-  margin-right: 10px;
-  margin-left: 12rem;
 }
 
 .container-title > h1 > span {
@@ -520,7 +528,6 @@ nav a {
   font-weight: 400;
   line-height: 1.5rem;
   padding-bottom: 3rem;
-  margin-left: 13rem;
 }
 
 .vacation--plans--li {
