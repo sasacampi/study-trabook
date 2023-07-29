@@ -444,8 +444,7 @@ nav a {
 
 .centered-text > h1 {
   width: 100%;
-  max-width: 45rem;
-  min-height: 2rem;
+  max-width: 50rem;
   color: #222;
   font-family: Volkhov;
   font-size: 3rem;
@@ -453,13 +452,15 @@ nav a {
   font-weight: 700;
   line-height: 3.5rem;
   overflow-y: hidden;
-  margin-top: 2rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
 }
 
 .centered-text > p {
   width: 100%;
-  max-width: 27rem;
-  min-height: 5rem;
+  max-width: 25rem;
+  min-height: 3rem;
   color: var(--paragraph, #666);
   text-align: center;
   font-family: Poppins;
@@ -470,6 +471,36 @@ nav a {
 }
 
 .centered-text > h1 > span {
+  color: #fa7436;
+}
+
+.latestblog-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.latestblog-text > h1 {
+  width: 100%;
+  max-width: 50rem;
+  color: #222;
+  font-family: Volkhov;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.latestblog-text > h1 > span {
   color: #fa7436;
 }
 
@@ -492,28 +523,34 @@ nav a {
 
 .container {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   padding: 0 2em;
 }
 
 .container-title {
-  width: 100%;
-  max-width: 75rem;
-  min-height: auto;
-  background-image: url("./img/airplane.png");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-title > h1 {
+  width: 100%;
+  max-width: 50rem;
   color: #222;
   font-family: Volkhov;
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.375rem;
-  margin-right: 1rem;
+  line-height: 3.5rem;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
 }
 
 .container-title > h1 > span {
@@ -521,14 +558,58 @@ nav a {
 }
 
 .container-title > p {
+  width: 100%;
+  max-width: 25rem;
+  min-height: 3rem;
   color: var(--paragraph, #666);
   text-align: center;
   font-family: Poppins;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5rem;
-  padding-bottom: 3rem;
+  line-height: 1.25rem;
+}
+
+.bvp--title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.bvp--title > h1 {
+  width: 100%;
+  max-width: 50rem;
+  color: #222;
+  font-family: Volkhov;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.bvp--title > h1 > span {
+  color: #fa7436;
+}
+
+.bvp--title > p {
+  width: 100%;
+  max-width: 25rem;
+  min-height: 3rem;
+  color: var(--paragraph, #666);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
 }
 
 .vacation--plans--li {
@@ -597,18 +678,20 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  overflow-x: hidden;
+  position: relative;
+  flex-basis: auto;
 }
 
 .bvp--container {
   width: 100%;
   width: 21.75rem;
-  height: 23.65rem;
-  gap: 20px;
+  height: 22.65rem;
   border-radius: 0.625rem;
+  gap: 20px;
   background: #fefcfb;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .bvp--img {
@@ -640,8 +723,8 @@ nav a {
   transition: 0.3s all;
   display: block;
   position: absolute;
-  top: 32%;
-  left: 32%;
+  top: 55%;
+  left: 66%;
   cursor: pointer;
   z-index: 1;
 }
@@ -952,8 +1035,9 @@ nav a {
   justify-content: center;
   align-items: center;
   min-height: auto;
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
   padding-top: 5rem;
+  padding: 0 2em;
 }
 
 .newsletter-content {
@@ -962,6 +1046,7 @@ nav a {
   align-items: center;
   align-text: center;
   justify-content: flex-start;
+  padding: 0 1em;
 }
 
 .bg {
@@ -969,7 +1054,7 @@ nav a {
   background: var(--primary-o, #fa7436);
   width: 100%;
   max-width: 73.125rem;
-  min-height: 26rem;
+  min-height: 25rem;
   flex-shrink: 0;
 }
 
@@ -990,7 +1075,8 @@ nav a {
   position: relative;
   width: 100%;
   max-width: 550px;
-  min-height: auto;
+  min-height: 100px;
+  padding: 0 2em;
 }
 
 .input-wrapper {
@@ -1036,7 +1122,6 @@ nav a {
   line-height: normal;
   display: inline-flex;
   padding: 0.8125rem 1.625rem;
-  margin-bottom: 50rem;
   margin-right: 1rem;
 }
 
