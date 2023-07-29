@@ -20,14 +20,11 @@ body {
   background-color: #fff;
 }
 
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
 * {
   scrollbar-width: auto;
   scrollbar-color: #ababab #ffffff;
 }
 
-/* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 16px;
   background-color: #fff;
@@ -199,8 +196,6 @@ nav a {
   }
 }
 
-/* ===== HERO STARTS HERE ===== */
-
 .hero {
   display: flex;
   align-items: center;
@@ -260,9 +255,6 @@ nav a {
   margin-top: 2rem;
   cursor: pointer;
 }
-
-/* ===== HERO ENDS HERE ===== */
-/* ===== EXCLUSIVE DEALS STARTS HERE ===== */
 
 .cards-list {
   display: flex;
@@ -504,9 +496,6 @@ nav a {
   color: #fa7436;
 }
 
-/* ===== EXCLUSIVE DEALS AND DISCOUNTS ENDS HERE ===== */
-/* ===== BEST VACATION PLANS/THINGS TO DO STARTS HERE ===== */
-
 .vacation--plans {
   display: flex;
   flex-wrap: wrap;
@@ -672,8 +661,6 @@ nav a {
   margin-bottom: 2rem;
 }
 
-// Best vacation plan starts here
-
 .best--vacation--plans {
   display: flex;
   flex-wrap: wrap;
@@ -795,9 +782,6 @@ nav a {
   margin-right: auto;
 }
 
-/* ===== BEST VACATION PLAN ENDS HERE ===== */
-/* ===== GET UPDATE STARTS HERE ===== */
-
 .updatecard {
   position: relative;
   font-size: 1rem;
@@ -861,9 +845,6 @@ nav a {
   line-height: 2rem;
   margin-right: auto;
 }
-
-/* ===== GET UPDATE ENDS HERE ===== */
-/* ===== FOOTER STARTS HERE ===== */
 
 .footer {
   display: flex;
@@ -1027,9 +1008,6 @@ nav a {
   }
 }
 
-/* ===== FOOTER ENDS HERE ===== */
-/* =====  NEWSLETTER STARTS HERE ===== */
-
 .newsletter-container {
   display: flex;
   justify-content: center;
@@ -1124,6 +1102,3 @@ nav a {
   padding: 0.8125rem 1.625rem;
   margin-right: 1rem;
 }
-
-/* =====  NEWSLETTER ENDS HERE ===== */
-/* ===== Mobile Responsive Styles ===== */
