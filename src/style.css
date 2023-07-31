@@ -300,7 +300,7 @@ nav a {
   transition: 0.3s all;
   display: block;
   position: absolute;
-  top: 30%;
+  top: 33%;
   left: 25%;
   cursor: pointer;
   z-index: 1;
@@ -708,10 +708,10 @@ nav a {
 
 .best--vacation--plans:hover .card-button {
   transition: 0.3s all;
-  display: block;
+  display: flex;
   position: absolute;
-  top: 55%;
-  left: 66%;
+  top: 27%;
+  left: 32%;
   cursor: pointer;
   z-index: 1;
 }
@@ -720,9 +720,9 @@ nav a {
   transition: filter 0.3s;
 }
 
-.best--vacation--plans:hover .bvp-img {
+.best--vacation--plans:hover .bvp--img {
   transition: 0.9s all;
-  transition-duration: 1.5s;
+  transition-duration: 2.5s;
   filter: grayscale(100%);
 }
 
