@@ -198,21 +198,26 @@ nav a {
 
 .hero {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: auto;
   height: auto;
   padding-bottom: 5rem;
   overflow-x: hidden;
+  padding: 0 2em;
 }
 
 .hero--image {
+  position: relative;
+  flex-basis: auto;
   width: 100%;
   max-width: 45rem;
   min-height: auto;
 }
 
 .hero--text {
+  padding-right: 1em;
   flex-direction: column;
   padding-left: 5rem;
 }
